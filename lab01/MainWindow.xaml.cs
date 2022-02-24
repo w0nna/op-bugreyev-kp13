@@ -36,5 +36,15 @@ namespace lab01
             w1.Show();
             Hide();
         }
+
+        private void CalcBtn(object sender, RoutedEventArgs e)
+        {
+            Window2 w2 = new Window2();
+            w2.Show();
+            Hide();
+        }
+
+
     }
-}
+}  
+   

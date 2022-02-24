@@ -16,3 +16,14 @@ C:\Users\Iwni D\Documents\op-bugreyev-kp13\lab01\obj\Debug\lab01.exe
 C:\Users\Iwni D\Documents\op-bugreyev-kp13\lab01\obj\Debug\lab01.pdb
 C:\Users\Iwni D\Documents\op-bugreyev-kp13\lab01\obj\Debug\Window1.g.cs
 C:\Users\Iwni D\Documents\op-bugreyev-kp13\lab01\obj\Debug\Window1.baml
+C:\Users\Iwni D\Documents\op-bugreyev-kp13\lab01\obj\Debug\Window2.g.cs
+C:\Users\Iwni D\Documents\op-bugreyev-kp13\lab01\obj\Debug\Window2.baml
+C:\Users\Iwni D\Documents\op-bugreyev-kp13\lab01\obj\Debug\App.baml
+C:\Users\Iwni D\Documents\op-bugreyev-kp13\lab01\bin\Debug\MaterialDesignColors.dll
+C:\Users\Iwni D\Documents\op-bugreyev-kp13\lab01\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Iwni D\Documents\op-bugreyev-kp13\lab01\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Iwni D\Documents\op-bugreyev-kp13\lab01\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Iwni D\Documents\op-bugreyev-kp13\lab01\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Iwni D\Documents\op-bugreyev-kp13\lab01\obj\Debug\lab01.csproj.CopyComplete
+C:\Users\Iwni D\Documents\op-bugreyev-kp13\lab01\bin\Debug\CsQuery.dll
+C:\Users\Iwni D\Documents\op-bugreyev-kp13\lab01\bin\Debug\CsQuery.xml
