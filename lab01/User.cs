@@ -19,7 +19,7 @@ namespace lab01
 
         public override string ToString()
         {
-            return "ID: " + Zalik + "   Name: " + Surname + " " + Name + " " + Otches;
+            return "ID: " + Zalik + "   Name: " + Surname + " " + Name + " " + Otches+ ";";
         }
 
         public User(string name, string surname, string otches, string zalik)

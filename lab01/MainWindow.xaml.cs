@@ -44,7 +44,31 @@ namespace lab01
             Hide();
         }
 
+        private void BackBtn(object sender, RoutedEventArgs e)
+        {
+            MainWindow mw = new MainWindow();
+            Hide();
+            mw.Show();
+        }
 
+        private void Btn_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window3 krestnul = new Window3();
+            Hide();
+            krestnul.Show();
+        }
+
+        private void gotoinfo(object sender, RoutedEventArgs e)
+        {
+            Window4 info = new Window4();
+            Hide();
+            info.Show();
+        }
     }
 }  
    

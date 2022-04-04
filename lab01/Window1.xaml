@@ -3,7 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:lab01"
         mc:Ignorable="d"
         Title="Login in System" Height="700" Width="550" >
@@ -21,19 +20,27 @@
         </Border.Effect>
 
         <StackPanel>
-
-            <TextBlock Text="Вписати тебе в систему?" FontSize="25" FontWeight="Bold" Margin="0 0 0 20" HorizontalAlignment="Center" VerticalAlignment="Center" />
             <Grid Margin="0 0 0 20">
-                <Button  HorizontalAlignment="Right" Content="Ні" FontWeight="Bold" FontFamily="Arial Black"   BorderBrush="#FF6B40B6"  Cursor="Hand"  Margin="0,-6,0,26" Width="75" AutomationProperties.Name="BtnNi" Background="{x:Null}" Foreground="#FF6B40B6" Click="GoToMainMenu_Click"  />
+                <TextBlock Text="ВПИСАТИ ТЕБЕ В СИСТЕМУ?" FontSize="25" FontWeight="Bold" FontFamily="Bahnschrift Condensed" Width="222" Margin="109,-10,109,10" />
+
+                <Button Content="ДОДАТИ СТУДЕНТА" FontWeight="Bold" Click="Save_Click" Margin="140,291,140,-269" FontSize="16" FontFamily="Bahnschrift Condensed" BorderBrush="Black" Background="#FFEFEEEE"/>
+                <Button Content="ВИДАЛИТИ СТУДЕНТА ЗА НОМЕРОМ ЗАЛІКОВОЇ КНИЖКИ" FontWeight="Bold" Cursor="Hand" Margin="28,455,20,-442" FontFamily="Bahnschrift Condensed" FontSize="16" BorderBrush="Black" Background="#FFEFEEEE" Click="DeleteStudent_Click"/>
+                <Button Content="ВІДКРИТИ СПИСОК СТУДЕНТІВ" Margin="88,327,80,-307" FontWeight="Bold" Click="Open_Click" Cursor="Hand" BorderBrush="Black" Background="#FFEFEEEE" FontFamily="Bahnschrift Condensed" FontSize="16"/>
+                <Button  HorizontalAlignment="Center" Content="Ні" FontWeight="Bold" FontFamily="Bahnschrift Condensed"   BorderBrush="#FF6B40B6"  Cursor="Hand"  Margin="0,20,0,10" Width="76" AutomationProperties.Name="BtnNi" Background="{x:Null}" Foreground="#FF6B40B6" Click="GoToMainMenu_Click" FontSize="16"  />
+                <TextBox TextWrapping="Wrap" MaxLength = "14"  x:Name="PoleImya" Margin="84,81,80,-58" SelectionBrush="#FF6B40B6" FontFamily="Bahnschrift Condensed" FontSize="14" TextAlignment="Center"/>
+                <TextBox TextWrapping="Wrap" MaxLength = "28" x:Name="PoleFamil" Margin="84,134,80,-111" SelectionBrush="#FF6B40B6"  FontFamily="Bahnschrift Condensed" FontSize="14" TextAlignment="Center"/>
+                <TextBox TextWrapping="Wrap" MaxLength = "35" x:Name="PoleOtchest" Width="276" Margin="84,191,80,-168" SelectionBrush="#FF6B40B6" FontFamily="Bahnschrift Condensed" FontSize="14" TextAlignment="Center" TabIndex="2147483637"/>
+                <TextBox TextWrapping="Wrap" MaxLength = "8" x:Name="PoleZalik" Margin="68,257,60,-233" SelectionBrush="#FF6B40B6" FontFamily="Bahnschrift Condensed" FontSize="14" TextAlignment="Center" UndoLimit="8"/>
+                <Label Content="Ім'я" Margin="88,58,-88,-31"/>
+                <Label Content="Прізвище" Margin="84,111,-84,-87"/>
+                <Label Content="По-Батькові" Margin="84,169,-84,-145"/>
+                <Label Content="№ Залікової Книжки [Без КВ№]" Margin="128,226,120,-204"/>
+                <TextBox MaxLength = "8" TextWrapping="Wrap" x:Name="PoleDelete" Margin="64,421,64,-397" SelectionBrush="#FF6B40B6" FontFamily="Bahnschrift Condensed" FontSize="14" TextAlignment="Center"/>
+                <Label Content="№ Залікової Книжки [Без КВ№]" Margin="124,390,124,-368"/>
             </Grid>
-            <TextBox MaxLength="20" x:Name="PoleImya" materialDesign:HintAssist.Hint="Ім'я"   Style="{StaticResource MaterialDesignFloatingHintTextBox}" UndoLimit="100"/>
-            <TextBox MaxLength="40" x:Name="PoleFamil" materialDesign:HintAssist.Hint="Прізвище"   Style="{StaticResource MaterialDesignFloatingHintTextBox}" UndoLimit="100"/>
-            <TextBox MaxLength="40" x:Name="PoleOtchest" materialDesign:HintAssist.Hint="По-Батькові"   Style="{StaticResource MaterialDesignFloatingHintTextBox}" UndoLimit="35"/>
-            <TextBox MaxLength="8" x:Name="PoleZalik" materialDesign:HintAssist.Hint="Номер Залікової книжки (!КВ№ НЕ ПИСАТИ!)"   Style="{StaticResource MaterialDesignFloatingHintTextBox}" Height="39" UndoLimit="8"/>
-            <Button Content="Зберегти Данні" Margin="0 20" FontWeight="Bold" Click="Save_Click"/>
-            <Button Content="Відкрити Список Студентів" Margin="0 -10" FontWeight="Bold" Click="Open_Click" Cursor="Hand"/>
-            <Button Content="Видалити Студента за номером Залікової Книжки"  Margin="0 20" FontWeight="Bold" Background="#FF673AB7" Cursor="Hand"/>
-            <TextBox MaxLength="8" materialDesign:HintAssist.Hint="Номер Заликової Книжки"   Style="{StaticResource MaterialDesignFloatingHintTextBox}" UndoLimit="8"/>
+
+
+
 
         </StackPanel>
 

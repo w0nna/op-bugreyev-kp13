@@ -23,21 +23,16 @@ namespace lab01
 
     public partial class Window1 : Window
     {
-        List<User> users = new List<User>();
+        List<User> usersList = new List<User>();
 
-        public string path = @"\Users\Iwni D\Documents\op-bugreyev-kp13\lab01\StudentList.txt";
+        public string path = @"C:\\Users\1wni Work\Desktop\op-bugreyev-kp13\lab01\StudentList.txt";
         public Window1()
         {
             InitializeComponent();
         }
-        Stream mystream;
-
-
-
+      
         private void GoToMainMenu_Click(object sender, RoutedEventArgs e)
         {
-            users.Add(new User("",""))
-
             MainWindow mw = new MainWindow();
             Hide();
             mw.Show();
@@ -46,19 +41,34 @@ namespace lab01
 
         private void Open_Click(object sender, RoutedEventArgs e)
         {
+                using (StreamWriter SW = new StreamWriter(path))
+                {
+                    foreach (User user in usersList)
+                    {
+                        SW.WriteLine(user.ToString());
+                    }
+                }
                 StreamReader read = new StreamReader(path);
                 string AllInFile = read.ReadLine();
+
+
                 if (String.IsNullOrEmpty(AllInFile))
                 {
                     MessageBox.Show("Файл пуст!");
                 }
                 else
                 {
-
+                    System.Diagnostics.Process txt = new System.Diagnostics.Process();
+                    txt.StartInfo.FileName = "notepad.exe";
+                    txt.StartInfo.Arguments = path;
+                    txt.Start();
                     MessageBox.Show("Файл успешно открыт!");
                 }
-           
         }
+                
+
+
+    
 
 
         private void Save_Click(object sender, RoutedEventArgs e)
@@ -68,6 +78,7 @@ namespace lab01
             string saveFamil_in_file = PoleFamil.Text;
             string saveOtches_in_file = PoleOtchest.Text;
             string saveZalik_in_file =  PoleZalik.Text;
+            
 
             if (String.IsNullOrWhiteSpace(saveImya_in_file) || String.IsNullOrEmpty(saveImya_in_file))
             {
@@ -81,43 +92,44 @@ namespace lab01
             {
                 MessageBox.Show("Поле введення По-Батькові – порожнє!");
             }
-            else
-            {
-                int DlinnaSpiska;
-                
-
-                string[] lines = { ListImya[DlinnaSpiska - 1], ListFamil[DlinnaSpiska - 1], ListOtches[DlinnaSpiska - 1], ListZalik[DlinnaSpiska - 1] };
-                using (StreamWriter outputFile = new StreamWriter(path))
-                {
-                    foreach (string line in lines)
-                    {
-                        outputFile.WriteLine(line);
-                    }
-                }
-
-
-
-                MessageBox.Show("Запис успішно збережено!");
-            }
-
-            if (String.IsNullOrWhiteSpace(Convert.ToString(saveZalik_in_file)) || String.IsNullOrEmpty(Convert.ToString(saveZalik_in_file)))
+            else if(String.IsNullOrWhiteSpace(Convert.ToString(saveZalik_in_file)) || String.IsNullOrEmpty(Convert.ToString(saveZalik_in_file)))
             {
                 MessageBox.Show("Поле введення Номеру Залікової Книжки – порожнє!");
+
+            }
+            else
+            {
+                usersList.Add(new User(saveImya_in_file, saveFamil_in_file, saveOtches_in_file, saveZalik_in_file));
+                MessageBox.Show("Студента успішно добавлено!");
             }
 
 
-
-
-
-
         }
-      
-        private void Pole_TextChanged(object sender, TextChangedEventArgs e)
+
+        private void DeleteStudent_Click(object sender, RoutedEventArgs e)
         {
+            string DeleteStudent = PoleDelete.Text;
+            if(String.IsNullOrWhiteSpace(DeleteStudent) || String.IsNullOrEmpty(DeleteStudent))
+            {
+                MessageBox.Show("Поле введення - пусте!");
+            }
+            else
+            {
+                int DeleteInx = usersList.FindIndex(x => x.Zalik == DeleteStudent);
+                if(DeleteInx == -1)
+                {
+                    MessageBox.Show("Студента не знайдено!");
+                }
+                else
+                {
+                    usersList.RemoveAt(DeleteInx);
+                    MessageBox.Show("Студента видалено!");
+                }
 
+            }
+
+            
         }
-
-
     }
 }
 

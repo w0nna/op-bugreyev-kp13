@@ -133,9 +133,6 @@ namespace lab01
             mw.Show();
         }
 
-        private void Button_Click_1()
-        {
 
-        }
     }
 }

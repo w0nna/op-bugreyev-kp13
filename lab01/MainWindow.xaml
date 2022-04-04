@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lab01"
         mc:Ignorable="d"
-        Title="Star Program" Height="400" Width="400" >
+        Title="Star Program" Height="400" Width="300" >
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="#FFEDEDED"/>
@@ -21,12 +21,12 @@
         </Border.Effect>
 
         <StackPanel>
-
-            <TextBlock Text="Привіт!" FontSize="40" FontWeight="Bold" Margin="0 0 0 20" HorizontalAlignment="Left" />
+            <TextBlock Text="ПРИВІТ!" FontSize="40" FontWeight="Bold" FontFamily="Bahnschrift SemiBold Condensed" />
             <Grid Margin="0 0 0 20">
-                <Button Margin="0,0,0,40" HorizontalAlignment="Center" Content="Зареєструватися" FontWeight="Bold" FontFamily="Arial Black"   BorderBrush="{x:Null}"  Cursor="Hand" Style="{StaticResource MaterialDesignFlatMidBgButton}"  Width="182" AutomationProperties.Name="BtnReg" Click="FirstBtn" />
-                <Button  HorizontalAlignment="Center" Content="Хрестики-Нолики" FontWeight="Bold" FontFamily="Arial Black"   BorderBrush="{x:Null}"  Cursor="Hand" Style="{StaticResource MaterialDesignFlatMidBgButton}" Margin="0,40,0,0" Width="182" AutomationProperties.Name="BtnReg"  />
-                <Button  HorizontalAlignment="Center" Content="Калькулятор" FontWeight="Bold" FontFamily="Arial Black"   BorderBrush="{x:Null}"  Cursor="Hand" Style="{StaticResource MaterialDesignFlatMidBgButton}" Margin="0,80,0,-40" Width="182" AutomationProperties.Name="BtnReg" Click="CalcBtn" />
+                <Button Margin="0,19,0,10" HorizontalAlignment="Center" Content="ЗАРЕЄСТРУВАТИСЯ" FontWeight="Normal" FontFamily="Bahnschrift Condensed"    Cursor="Hand"   Width="182"  Click="FirstBtn" BorderBrush="#FF842B9A" Foreground="Black" Background="{x:Null}" />
+                <Button  HorizontalAlignment="Center" Content="ХРЕСТИКИ-НУЛИКИ" FontWeight="Normal" FontFamily="Bahnschrift Condensed"     Cursor="Hand"   Width="182" Margin="0,51,0,-24" BorderBrush="#FF842B9A" Background="{x:Null}" Click="Button_Click"   />
+                <Button  HorizontalAlignment="Center" Content="КАЛЬКУЛЯТОР" FontWeight="Bold" FontFamily="Bahnschrift Condensed"   Cursor="Hand"  Margin="0,85,0,-59" Width="182" Click="CalcBtn" Background="{x:Null}" BorderBrush="#FF842B9A" />
+                <Button  HorizontalAlignment="Center" Content="ІНФО" FontWeight="Bold" FontFamily="Bahnschrift Condensed"   Cursor="Hand"  Margin="0,121,0,-95" Width="182" Background="{x:Null}" BorderBrush="#FF842B9A" Click="gotoinfo" />
 
             </Grid>
         </StackPanel>

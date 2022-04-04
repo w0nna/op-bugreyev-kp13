@@ -1,0 +1,1 @@
+У вікні 3 xaml.cs змінити путь до файлів krest.png  i nolik.png
