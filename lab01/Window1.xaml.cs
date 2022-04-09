@@ -25,7 +25,7 @@ namespace lab01
     {
         List<User> usersList = new List<User>();
 
-        public string path = @"C:\\Users\1wni Work\Desktop\op-bugreyev-kp13\lab01\StudentList.txt";
+        public string path = @"C:\Users\1wni Work\Documents\op-bugreyev-kp13\lab01\StudentList.txt";
         public Window1()
         {
             InitializeComponent();
@@ -63,6 +63,7 @@ namespace lab01
                     txt.StartInfo.Arguments = path;
                     txt.Start();
                     MessageBox.Show("Файл успешно открыт!");
+                    txt.Close();
                 }
         }
                 

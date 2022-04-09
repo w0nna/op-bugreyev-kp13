@@ -23,8 +23,8 @@ namespace lab01
         public int i = 1;
         public bool XodKrestika;
         public int[,] pole = new int[6, 6];
-        string pathKrest = @"C:\Users\1wni Work\Desktop\op-bugreyev-kp13\lab01\krest.png";
-        string pathNull = @"C:\Users\1wni Work\Desktop\op-bugreyev-kp13\lab01\nol.png";
+        string pathKrest = @"C:\Users\1wni Work\Documents\op-bugreyev-kp13\lab01\krest.png";
+        string pathNull = @"C:\Users\1wni Work\Documents\op-bugreyev-kp13\lab01\nol.png";
         public bool PobedilKrestik;
         public bool UsersRestart;
 

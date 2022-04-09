@@ -1,0 +1,35 @@
+﻿<Window x:Class="lab01.MainWindow"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab01"
+        mc:Ignorable="d"
+        Title="Star Program" Height="400" Width="300" >
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFEDEDED"/>
+            <GradientStop Color="White" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+
+
+    <Border  MinWidth="200" Margin="15,28,15,27" Padding="30" MaxWidth="300" CornerRadius="20" Background="White" >
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="35" ShadowDepth="0" Color="LightGray" />
+        </Border.Effect>
+
+        <StackPanel>
+            <TextBlock Text="ПРИВІТ!" FontSize="40" FontWeight="Bold" FontFamily="Bahnschrift SemiBold Condensed" />
+            <Grid Margin="0 0 0 20">
+                <Button Margin="0,19,0,10" HorizontalAlignment="Center" Content="ЗАРЕЄСТРУВАТИСЯ" FontWeight="Normal" FontFamily="Bahnschrift Condensed"    Cursor="Hand"   Width="182"  Click="FirstBtn" BorderBrush="#FF842B9A" Foreground="Black" Background="{x:Null}" />
+                <Button  HorizontalAlignment="Center" Content="ХРЕСТИКИ-НУЛИКИ" FontWeight="Normal" FontFamily="Bahnschrift Condensed"     Cursor="Hand"   Width="182" Margin="0,51,0,-24" BorderBrush="#FF842B9A" Background="{x:Null}" Click="Button_Click"   />
+                <Button  HorizontalAlignment="Center" Content="КАЛЬКУЛЯТОР" FontWeight="Bold" FontFamily="Bahnschrift Condensed"   Cursor="Hand"  Margin="0,85,0,-59" Width="182" Click="CalcBtn" Background="{x:Null}" BorderBrush="#FF842B9A" />
+                <Button  HorizontalAlignment="Center" Content="ІНФО" FontWeight="Bold" FontFamily="Bahnschrift Condensed"   Cursor="Hand"  Margin="0,121,0,-95" Width="182" Background="{x:Null}" BorderBrush="#FF842B9A" Click="gotoinfo" />
+
+            </Grid>
+        </StackPanel>
+
+    </Border>
+</Window>
