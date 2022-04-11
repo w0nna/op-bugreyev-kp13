@@ -5,21 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lab01"
         mc:Ignorable="d"
-        Title="Info" Height="150" Width="350" ResizeMode="NoResize">
-    <Grid>
-        <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="#FFEDEDED"/>
-                <GradientStop Color="White" Offset="1"/>
-            </LinearGradientBrush>
-        </Grid.Background>
-        <Button Content="Назад" HorizontalAlignment="Left" Margin="243,39,0,0" VerticalAlignment="Top" Height="32" Width="65" BorderBrush="#FF842B9A" Background="{x:Null}" Click="GoBack_click"/>
-        <Label Content="Творець:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiLight Condensed"/>
-        <Label Content="Група:" HorizontalAlignment="Left" Margin="10,43,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift Condensed"/>
-        <Label Content="Дата створення:" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift Condensed"/>
-        <Label Content="Бугреєв Гліб Артемович" HorizontalAlignment="Left" Margin="49,10,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiLight Condensed" RenderTransformOrigin="0.187,0.425"/>
-        <Label Content="КП-13 ФПМ" HorizontalAlignment="Left" Margin="44,43,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiLight Condensed"/>
-        <Label Content="23.03.2022" HorizontalAlignment="Left" Margin="84,76,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiLight Condensed"/>
-
-    </Grid>
+        Title="Info" Height="200" Width="400" ResizeMode="NoResize">
+ 
 </Window>
