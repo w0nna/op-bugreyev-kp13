@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="c23e78db1e71d000a43b0c9b0df2dccb.png" />
+    <None Remove="close1.png" />
+    <None Remove="min1.png" />
+    <None Remove="pause.png" />
+    <None Remove="png-transparent-computer-icons-pause-button-purple-blue-violet.png" />
+    <None Remove="Фон.png" />
+    <None Remove="Фон2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignColors" Version="2.0.6" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.5.0" />
+    <PackageReference Include="MaterialDesignThemes.MahApps" Version="0.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="c23e78db1e71d000a43b0c9b0df2dccb.png" />
+    <Resource Include="close1.png" />
+    <Resource Include="min1.png" />
+    <Resource Include="pause.png" />
+    <Resource Include="png-transparent-computer-icons-pause-button-purple-blue-violet.png" />
+    <Resource Include="Фон2.png" />
+  </ItemGroup>
+
+</Project>
