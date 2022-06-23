@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\1wni Work\\Desktop\\Study and Work\\OP GIT\\Prac02\\Prac02\\Prac02.csproj": {}
+    "C:\\Users\\1wni Work\\Desktop\\Study and Work\\ОП\\Prac02\\Prac02\\Prac02.csproj": {}
   },
   "projects": {
-    "C:\\Users\\1wni Work\\Desktop\\Study and Work\\OP GIT\\Prac02\\Prac02\\Prac02.csproj": {
+    "C:\\Users\\1wni Work\\Desktop\\Study and Work\\ОП\\Prac02\\Prac02\\Prac02.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\1wni Work\\Desktop\\Study and Work\\OP GIT\\Prac02\\Prac02\\Prac02.csproj",
+        "projectUniqueName": "C:\\Users\\1wni Work\\Desktop\\Study and Work\\ОП\\Prac02\\Prac02\\Prac02.csproj",
         "projectName": "Prac02",
-        "projectPath": "C:\\Users\\1wni Work\\Desktop\\Study and Work\\OP GIT\\Prac02\\Prac02\\Prac02.csproj",
+        "projectPath": "C:\\Users\\1wni Work\\Desktop\\Study and Work\\ОП\\Prac02\\Prac02\\Prac02.csproj",
         "packagesPath": "C:\\Users\\1wni Work\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\1wni Work\\Desktop\\Study and Work\\OP GIT\\Prac02\\Prac02\\obj\\",
+        "outputPath": "C:\\Users\\1wni Work\\Desktop\\Study and Work\\ОП\\Prac02\\Prac02\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

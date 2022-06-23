@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TpnEX2h4ruGk9l7LC8BTbvOLYYQGgmIXY/nQW8un2YonGmSh5ZkARxHdrMzm3h8wr0drxlw+779Bc2reDK/o4g==",
+  "dgSpecHash": "xxYqHDLaCo1Q1anPbnsPSRi0fse07u1dytkyK2mPOd/aiIXKcjwl5vz02iNAPGzbcav72F7YAbfTDlJllIuopA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\1wni Work\\Desktop\\Study and Work\\ОП\\Prac02\\Prac02\\Prac02.csproj",
+  "projectFilePath": "C:\\Users\\1wni Work\\Desktop\\Study and Work\\OP GIT\\Prac02\\Prac02\\Prac02.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\1wni Work\\.nuget\\packages\\controlzex\\4.3.0\\controlzex.4.3.0.nupkg.sha512",
     "C:\\Users\\1wni Work\\.nuget\\packages\\mahapps.metro\\2.0.0\\mahapps.metro.2.0.0.nupkg.sha512",
